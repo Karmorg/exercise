@@ -1,7 +1,6 @@
 package karmo.exercise.service;
 
 import karmo.exercise.Account;
-import karmo.exercise.controller.AccountController;
 import karmo.exercise.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,5 +13,9 @@ public class AccountService {
 
     public void createAccount(Account account) {
         accountRepository.createAccount(account);
+    }
+
+    public boolean accountExists(String aName) {
+        return accountRepository.accountNames().contains(aName);
     }
 }
