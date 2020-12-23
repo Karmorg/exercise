@@ -17,3 +17,6 @@ Created find accounts methods
 Paus
 Created methods for money transfer
 Paus
+Created tests for endpoints
+
+Exeptions, such as attempt to create an account with an existing name, have not been inplemented, since out of scope.
